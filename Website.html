@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <!--nav bar one-->
+
+    <div class="nav-bar">
+
+        <nav class="navbar navbar-dark navbar-expand-lg nav-bar-one p-1 gray mb-0">
+
+            <div class="container d-flex justify-content-between">
+
+                <ul class="navbar-nav d-flex align-items-center">
+
+                    <li class="nav-item nav-link text-muted" href="#">Offers</li>
+
+                    <li class="nav-item nav-link bi bi-phone mt-3 mb-3 mr-0 text-muted" href="#"></li>
+
+                    <li class="nav-item nav-link text-muted " href="#">Download App</li>
+
+                </ul>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Contact Us</a></li>
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Track order</a></li>
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Seller Login</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+    <!--nav bar two-->
+    <nav class="navbar navbar-dark navbar-expand-lg  nav-bar-two p-1 mt-0 ">
+        <div class="container d-flex justify-content-arround">
+            <ul class="navbar-nav d-flex align-items-center  w-50 mr-auto">
+                <li class="nav-item nav-link bi bi-phone mt-3 mb-3 mr-0 text-dark " href="#"></li>
+                <li class=" w-100 ">
+                    <form class="d-flex form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input class="form-control me-2" style="background-color: #e7e7e7;" type="search"
+                            placeholder="Search..." aria-label="Search">
+                    </form>
+                </li>
+            </ul>
+            <ul class="navbar-nav d-flex align-items-center ">
+                <li class="nav-item"><a class="nav-link text-dark " href="#">
+                        <i class="bi bi-cart"></i>
+                        <b><span>Cart</span></a></b>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">
+                        <i class="bi bi-heart"></i>
+                        <b><span>Whishlist</span></b></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-dark " href="#">
+                        <b><span class="">Jeanis</span></b>
+                        <i class="bi bi-chevron-down  mt-2 mb-0"></i>
+                    </a>
+                </li>
+                <li class="nav-item  "><a class="nav-link text-dark" href="#">
+                        <div class="text-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAaVBMVEX///8jHyAAAAAfGxwcFxgGAADf39/7+/sXERMUDhAaFRbv7+9ycXHa2toPBwlaWVnJyMjCwsIzMDGysrKsq6s4NTYmIyNCQECCgYHl5eWfnp56eHhRT1AsKitjYmLS0dGOjY1IR0eWlZU/4mxcAAADw0lEQVR4nO2aa3OqMBCGZQNyD6DcRLn+/x95graWVhCSbMycGZ5Pbcfpu2Q3m+WNh8POzs7Ozs5/yyWurreTYZxu1yq+fFy9imoA6hGGRwHqqPpkDGFAwSPGBOIBDcIPyR8bcI0ZXGiOH5C3O3Dm5Ecc6GzV+pcIluRHIFJcCm1N3+kbBq1blfoxmO/1DcOEWKX+mvw9DcoiCE2yLs+2pKloP/rFYvn/xil8JQEE1jZ9w7ACFfrnTQXwAM74+raxqQAeEAO/IaUcC8CWIMXWtzOOBWBLkGEvAU8F3JcAuwoijy8AL8LVP3IlYITgHs28GUDPQTM7grzDbVADqPlTUGPq+7zyI5gHQsudAZYDzMkkWZmD5qAJZgCbD8IfLMwAziIBYO5D7SugPQDtu0B7H9DeCfWfBdpPQ+3zgPaJSP9MqH0q1v5ewPlmlCuwahKed0PMc+CJ7rfjg99v9Qd6Nf7AIfS2OSSeMseyhQ0REFDok+l2yUafcOVYdNX6hOxUWnNK1dvFw7xVfX98GJTLMy7BklseKDaK/e/tHQbk9b6APO8LfEVtIO6z5wa/pLecWtQxGQ77Ib+lz6cPs17JRujAM6H6+d2PqzLKTqcsKqt48swVmB6U6PJhdq9+KFYeLi4enzshd8Mz+RrJPNq8+ddhQ78/R1BHomrSg13aJLOnvR039Gd7kGm6ZBl+Nx8HTl38JwY77k5/LpPwmkL30vwIBSjKKolDRpxUZQFAXw4q6HD0h/nma7LdR13HcSn7Yf6MwlkD/peiSQQIlRhK6LMIpHejn3O/lE0huWxbDgT8sSlUcj6VKYAHcmUgmYARuSRcJRMwQq/i+kfpBIyA+JQWCJhjr7jCdYizABJLUCJUwAgVHE8u8lvgAcnFhlX5HvCNYC+4cfpSy3g3EX1+Z24ZIc8OLwOCOcBpAg+EWsHriCUOofz6PmIGWA74TyQeU2xDAPy2WSVwS7OMxf+SUCLWIKtC/m4cbPTktuHwb4Pbqh3Fg8ndC+0CcReyfVjwmsec9vxqANz2vfYAtNeA/m2ovRMecsQcmDm//savT25DzMCu8GZCQbtowRrh1xc2SlJAmEs9mSu8sN9yR/IOAr2cSZJmMiEQyKRvMP2qWP4y+XtcKCoM49xOIrC4Y3AsiOYdVRH8tLHA2nZrN14esA83KfKtgd0OTQZsKd59vZqY7MEha4ZWzdf8/WPSNX1mMBGLuiyUL0zHpePfjKxvuuSo6MJkEkabpEMZREVW54aR11kRBeWQJq1y6Z2dnZ2dHRX8A9AKN+uTgKv2AAAAAElFTkSuQmCC"
+                                class="rounded image" alt="Profile">
+                        </div>
+                </li>
+                <li class="nav-item dropdown  d-flex align-items-center">
+                    <a class="nav-link dropdown-toggle text-dark align-items-center" href="#"
+                        id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Payments</a></li>
+                        <li><a class="dropdown-item" href="#">Wallet</a></li>
+                        <li><a class="dropdown-item" href="#">GetHelp</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--nav bar three-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar-3">
+
+        <div class="d-flex flex-row">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <ul class="d-flex ">
+
+
+                                <ul class="d-flex">
+
+                                    <li class=" flex-items ">
+
+                                        <a class="dropdown-item " href="#">Most Popular 1</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 2</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 3</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 4</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 5</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 6</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 7</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 8</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 9</a>
+
+                                    </li>
+
+                                </ul>
+
+
+
+                                <ul class="d-flex">
+
+                                    <li class=" flex-items">
+
+                                        <a class="dropdown-item " href="#">Most Popular 10</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 11</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 12</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 13</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 14</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 15</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 16</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 17</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 18</a>
+
+                                    </li>
+
+                                </ul>
+
+                                <ul class="d-flex">
+
+                                    <li class="flex-items ">
+
+                                        <a class="dropdown-item " href="#">Most Popular 19</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 20</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 21</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 22</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 23</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 24</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 25</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 26</a>
+
+                                        <a class="dropdown-item " href="#">Most Popular 27</a>
+
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> MEN </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> WOMEN ETHNIC </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> WOMEN WESTERN </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> KIDS </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> HOME & KITCHEN </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> BEAUTY & HEALTH </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> JEWELLERY & ACCESSORIES </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> BAGS & FOOTWEAR </a></nav>
+
+        <nav class="nav-item"><a class="nav-link" href="#"> ELECTRONICS </a></nav>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- Carousel -->
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+
+        <div class="carousel-inner">
+            <center>
+                <div class="carousel-item active">
+                    <img src="../TRUE EQUATIONS/buy-online.png" class="d-block" style="width:100%;Height:250px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../TRUE EQUATIONS/every-sale.jpg" class="d-block" style="width:100%;height:250px;">
+                </div>
+                <div class="carousel-item ">
+                    <img src="../TRUE EQUATIONS/images.jpg" class="d-block" style="width:100%;height:250px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="../TRUE EQUATIONS/fs-1.jpg" class="d-block" style="width:100%;height:250px;">
+                </div>
+            </center>
+        </div>
+
+        <!-- Circled images -->
+
+        <div class="container bg-light">
+            <div class="row mt-2">
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/shoes.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/watch.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>
+                            <center>Heading</center>
+                        </strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/camera.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/laptop.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/mobile.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/goggles.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/smart watch.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/face creams.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+                <div class="col mt-2">
+                    <img src="../TRUE EQUATIONS/clothing.jpg" class="rounded-circle" width="100px" height="100px" />
+                    <h5>
+                        <strong>Heading</strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offers Zone 3 Boxes -->
+
+    <div class="container container-3boxes bg-light">
+        <div class="row">
+            <div class="col-lg-4"><img src="../TRUE EQUATIONS/J4U.jpg" class="rounded" width="100%" height="80%" />
+            </div>
+            <div class="col-lg-4"><img src="../TRUE EQUATIONS/new arrival.jpg" class="rounded" width="100%"
+                    height="80%" />
+            </div>
+            <div class="col-lg-4"><img src="../TRUE EQUATIONS/every-sale.jpg" class="rounded" width="100%"
+                    height="80%" />
+            </div>
+        </div>
+
+        <!-- 2X2 Square Boxes -->
+
+        <div class="row ">
+            <div class="col-4 d-flex flex-column  align-items-left">
+                <h5 class=" ">
+                    <b>Heading 2</b>
+                </h5>
+                <div class="d-flex flex-row  " style="gap: 10px">
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row  " style="gap: 10px">
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex flex-column  align-items-left">
+                <h5 class=" ">
+                    <b>Heading 2</b>
+                </h5>
+                <div class="d-flex flex-row  " style="gap: 10px">
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row  " style="gap: 10px">
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 d-flex flex-column  align-items-left">
+                <h5 class=" ">
+                    <b>Heading 3</b>
+                </h5>
+                <div class="d-flex flex-row  " style="gap: 10px">
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row  " style="gap: 10px">
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                    <div class="d-flex flex-column   ">
+                        <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75  " />
+                        <p class="">sub Heading</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vertical Heights -->
+
+    <div class="container">
+        <h3> Todays Deals </h3>
+        <div class="d-flex flex-row">
+            <div class="d-flex flex-column">
+                <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75" />
+            </div>
+            <div class="d-flex flex-column">
+                <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75" />
+            </div>
+            <div class="d-flex flex-column">
+                <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75" />
+            </div>
+            <div class="d-flex flex-column">
+                <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75" />
+            </div>
+            <div class="d-flex flex-column">
+                <img src="../TRUE EQUATIONS/J4U.jpg" class="rounded w-75" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

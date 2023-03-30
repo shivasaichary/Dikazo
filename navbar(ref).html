@@ -1,0 +1,125 @@
+<!--nav bar two-->
+
+        <!-- <nav class="navbar navbar-dark navbar-expand-lg  nav-bar-two p-1 gray mt-0 ">
+
+            <div class="container d-flex justify-content-arround">
+
+                <ul class="navbar-nav d-flex align-items-center  w-50 mr-auto">
+
+                    <li class="nav-item nav-link bi bi-phone mt-3 mb-3 mr-0 text-dark " href="#"></li>
+
+                    <li class=" w-100 ">
+
+                        <form class="d-flex form-group has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input class="form-control me-2" style="background-color: #e7e7e7;" type="search"
+                                placeholder="Search..." aria-label="Search">
+                        </form>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav d-flex align-items-center ">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="#">
+                            <i class="bi bi-cart"></i>
+                            <span>Cart</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="bi bi-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown  d-flex align-items-center">
+                        <a class="nav-link dropdown-toggle text-dark align-items-center" href="#"
+                            id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Jeanis</span>
+                            <i class="bi bi-chevron-down  mt-2 mb-0"></i>
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+
+                            <li><a class="dropdown-item" href="#">Orders</a></li>
+
+                            <li><a class="dropdown-item" href="#">Payments</a></li>
+
+                            <li><a class="dropdown-item" href="#">Wallet</a></li>
+
+                            <li><a class="dropdown-item" href="#">GetHelp</a></li>
+
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link text-dark" href="#">
+                            <div class="text-center">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAaVBMVEX///8jHyAAAAAfGxwcFxgGAADf39/7+/sXERMUDhAaFRbv7+9ycXHa2toPBwlaWVnJyMjCwsIzMDGysrKsq6s4NTYmIyNCQECCgYHl5eWfnp56eHhRT1AsKitjYmLS0dGOjY1IR0eWlZU/4mxcAAADw0lEQVR4nO2aa3OqMBCGZQNyD6DcRLn+/x95graWVhCSbMycGZ5Pbcfpu2Q3m+WNh8POzs7Ozs5/yyWurreTYZxu1yq+fFy9imoA6hGGRwHqqPpkDGFAwSPGBOIBDcIPyR8bcI0ZXGiOH5C3O3Dm5Ecc6GzV+pcIluRHIFJcCm1N3+kbBq1blfoxmO/1DcOEWKX+mvw9DcoiCE2yLs+2pKloP/rFYvn/xil8JQEE1jZ9w7ACFfrnTQXwAM74+raxqQAeEAO/IaUcC8CWIMXWtzOOBWBLkGEvAU8F3JcAuwoijy8AL8LVP3IlYITgHs28GUDPQTM7grzDbVADqPlTUGPq+7zyI5gHQsudAZYDzMkkWZmD5qAJZgCbD8IfLMwAziIBYO5D7SugPQDtu0B7H9DeCfWfBdpPQ+3zgPaJSP9MqH0q1v5ewPlmlCuwahKed0PMc+CJ7rfjg99v9Qd6Nf7AIfS2OSSeMseyhQ0REFDok+l2yUafcOVYdNX6hOxUWnNK1dvFw7xVfX98GJTLMy7BklseKDaK/e/tHQbk9b6APO8LfEVtIO6z5wa/pLecWtQxGQ77Ib+lz6cPs17JRujAM6H6+d2PqzLKTqcsKqt48swVmB6U6PJhdq9+KFYeLi4enzshd8Mz+RrJPNq8+ddhQ78/R1BHomrSg13aJLOnvR039Gd7kGm6ZBl+Nx8HTl38JwY77k5/LpPwmkL30vwIBSjKKolDRpxUZQFAXw4q6HD0h/nma7LdR13HcSn7Yf6MwlkD/peiSQQIlRhK6LMIpHejn3O/lE0huWxbDgT8sSlUcj6VKYAHcmUgmYARuSRcJRMwQq/i+kfpBIyA+JQWCJhjr7jCdYizABJLUCJUwAgVHE8u8lvgAcnFhlX5HvCNYC+4cfpSy3g3EX1+Z24ZIc8OLwOCOcBpAg+EWsHriCUOofz6PmIGWA74TyQeU2xDAPy2WSVwS7OMxf+SUCLWIKtC/m4cbPTktuHwb4Pbqh3Fg8ndC+0CcReyfVjwmsec9vxqANz2vfYAtNeA/m2ovRMecsQcmDm//savT25DzMCu8GZCQbtowRrh1xc2SlJAmEs9mSu8sN9yR/IOAr2cSZJmMiEQyKRvMP2qWP4y+XtcKCoM49xOIrC4Y3AsiOYdVRH8tLHA2nZrN14esA83KfKtgd0OTQZsKd59vZqY7MEha4ZWzdf8/WPSNX1mMBGLuiyUL0zHpePfjKxvuuSo6MJkEkabpEMZREVW54aR11kRBeWQJq1y6Z2dnZ2dHRX8A9AKN+uTgKv2AAAAAElFTkSuQmCC"
+                                    class="rounded image" alt="Profile" />
+                            </div>
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav> -->
+
+        <!--nav bar three-->
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar-3">
+            <div class="container d-flex ">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All
+                        </a>
+                        <ul class="dropdown-menu d-flex ">
+                            <ul class="d-flex flex-column" style="background-color:#e7e7e7">
+                                <li class=" ">
+                                    <a class="dropdown-item " href="#">Fashion</a>
+                                </li>
+                                <li class=" ">
+                                    <a class="dropdown-item " href="#">Electronics & Mobiles</a>
+                                </li>
+                            </ul>
+                            <ul class="d-flex flex-column">
+                                <li class=" ">
+                                    <a class="dropdown-item " href="#">Most popular</a>
+                                </li>
+                                <li class=" ">
+                                    <a class="dropdown-item " href="#">Women's Fashion</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+                <nav class="nav-item"><a class="nav-link" href="#">MEN</a></nav>
+                <nav class="nav-item"><a class="nav-link" href="#">WOMEN ETHNIC</a></nav>
+                <nav class="nav-item"><a class="nav-link" href="#">WOMEN WESTERN</a></nav>
+            </div>
+        </nav> -->
+
+
+       <!-- data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAaVBMVEX///8jHyAAAAAfGxwcFxgGAADf39/7+/sXERMUDhAaFRbv7+9ycXHa2toPBwlaWVnJyMjCwsIzMDGysrKsq6s4NTYmIyNCQECCgYHl5eWfnp56eHhRT1AsKitjYmLS0dGOjY1IR0eWlZU/4mxcAAADw0lEQVR4nO2aa3OqMBCGZQNyD6DcRLn+/x95graWVhCSbMycGZ5Pbcfpu2Q3m+WNh8POzs7Ozs5/yyWurreTYZxu1yq+fFy9imoA6hGGRwHqqPpkDGFAwSPGBOIBDcIPyR8bcI0ZXGiOH5C3O3Dm5Ecc6GzV+pcIluRHIFJcCm1N3+kbBq1blfoxmO/1DcOEWKX+mvw9DcoiCE2yLs+2pKloP/rFYvn/xil8JQEE1jZ9w7ACFfrnTQXwAM74+raxqQAeEAO/IaUcC8CWIMXWtzOOBWBLkGEvAU8F3JcAuwoijy8AL8LVP3IlYITgHs28GUDPQTM7grzDbVADqPlTUGPq+7zyI5gHQsudAZYDzMkkWZmD5qAJZgCbD8IfLMwAziIBYO5D7SugPQDtu0B7H9DeCfWfBdpPQ+3zgPaJSP9MqH0q1v5ewPlmlCuwahKed0PMc+CJ7rfjg99v9Qd6Nf7AIfS2OSSeMseyhQ0REFDok+l2yUafcOVYdNX6hOxUWnNK1dvFw7xVfX98GJTLMy7BklseKDaK/e/tHQbk9b6APO8LfEVtIO6z5wa/pLecWtQxGQ77Ib+lz6cPs17JRujAM6H6+d2PqzLKTqcsKqt48swVmB6U6PJhdq9+KFYeLi4enzshd8Mz+RrJPNq8+ddhQ78/R1BHomrSg13aJLOnvR039Gd7kGm6ZBl+Nx8HTl38JwY77k5/LpPwmkL30vwIBSjKKolDRpxUZQFAXw4q6HD0h/nma7LdR13HcSn7Yf6MwlkD/peiSQQIlRhK6LMIpHejn3O/lE0huWxbDgT8sSlUcj6VKYAHcmUgmYARuSRcJRMwQq/i+kfpBIyA+JQWCJhjr7jCdYizABJLUCJUwAgVHE8u8lvgAcnFhlX5HvCNYC+4cfpSy3g3EX1+Z24ZIc8OLwOCOcBpAg+EWsHriCUOofz6PmIGWA74TyQeU2xDAPy2WSVwS7OMxf+SUCLWIKtC/m4cbPTktuHwb4Pbqh3Fg8ndC+0CcReyfVjwmsec9vxqANz2vfYAtNeA/m2ovRMecsQcmDm//savT25DzMCu8GZCQbtowRrh1xc2SlJAmEs9mSu8sN9yR/IOAr2cSZJmMiEQyKRvMP2qWP4y+XtcKCoM49xOIrC4Y3AsiOYdVRH8tLHA2nZrN14esA83KfKtgd0OTQZsKd59vZqY7MEha4ZWzdf8/WPSNX1mMBGLuiyUL0zHpePfjKxvuuSo6MJkEkabpEMZREVW54aR11kRBeWQJq1y6Z2dnZ2dHRX8A9AKN+uTgKv2AAAAAElFTkSuQmCC-->
+
