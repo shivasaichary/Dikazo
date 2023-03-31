@@ -61,7 +61,7 @@ body {
 /* NAV BAR THREE*/
 
 .nav-bar-3 {
-    height: 6vh;
+    height: 7vh;
     color: gray;
     font-size: smaller;
     padding-left: 9%;
@@ -71,9 +71,8 @@ body {
 
 .nav-bar-dropdown-section-one {
     color: #aaa;
-    background-color: #e7e7e7;
+    /* background-color: #e7e7e7; */
     position: relative;
-    top: 0;
     transition: 0.3s;
     font-size: 13px;
 }
@@ -165,11 +164,8 @@ li {
     gap: 10px;
 }
 
-
-
 .dropdown-item-jeanis {
     color: #aaa;
-
 }
 
 .dropdown-item-jeanis:hover {
@@ -182,4 +178,19 @@ li {
 
 .demo {
     align-items: center;
+}
+
+.icon{
+    color: red;
+}
+
+.logout{
+    color:black;
+    transition:0.3s;
+    position:relative;
+    
+}
+
+.logout:hover{
+    top: -3px;
 }
