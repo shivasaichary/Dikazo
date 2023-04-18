@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+
+    <!-- Bootstrap 5.3 link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3 Java Script link -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous">
+        </script>
+
+    <!-- CSS File Link -->
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Bootstrap Icons Link -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Poppins Font Imported From Google -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <!--nav bar one-->
+
+    <div class="nav-bar">
+
+        <nav class="navbar navbar-dark navbar-expand-lg nav-bar-one p-1">
+
+            <div class="container d-flex justify-content-between ">
+
+                <ul class="navbar-nav d-flex align-items-center">
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Offers</a></li>
+
+                    <li class="nav-item nav-link bi bi-phone mt-3 mb-3 mr-0 text-muted" href="#"></li>
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Download App</a></li>
+
+                </ul>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Contact Us</a></li>
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Track order</a></li>
+
+                    <li class="nav-item"><a class="nav-link text-muted" href="#">Seller Login</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- Nav bar Two -->
+
+        <nav class="navbar navbar-dark navbar-expand-lg  nav-bar-two p-3">
+
+            <div class="container d-flex justify-content-arround">
+
+                <ul class="navbar-nav d-flex align-items-center p-2 w-50  mr-auto d-flex flex-row">
+
+                    <li class="nav-item">
+
+                        <a class="navbar-brand"> <img src="../TRUE EQUATIONS/Dikazo.jpeg"
+                                style="width: 75px; height:60px;" />
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item w-100">
+
+                        <form class="d-flex form-group has-search">
+
+                            <span class="fa fa-search form-control-feedback">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <input class="form-control me-2 " style="background-color: #e7e7e7; " type="search"
+                                placeholder="Search..." aria-label="Search" />
+
+                        </form>
+
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav d-flex align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="#">
+                            <i class="bi bi-cart"></i>
+                            <span>Cart</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="bi bi-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link text-dark" href="#">
+                            <div class="text-center">
+                                <img src="../TRUE EQUATIONS/Profile.jpg" class="rounded image" alt="Profile" />
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item dropdown  d-flex align-items-center">
+
+                        <a class="nav-link dropdown-toggle text-dark align-items-center" href="#"
+                            id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="position: relative;">
+                                Jeanis
+                            </span>
+                        </a>
+
+                        <ul class="dropdown-menu rounded-4 p-2 m-0" aria-labelledby="navbarScrollingDropdown"
+                            style="position: absolute; top: 35px;">
+
+                            <li>
+                                <a class="dropdown-item dropdown-item-jeanis" href="#">
+                                    <i class="bi bi-person m-3"></i>
+                                    <span>
+                                        Profile
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item dropdown-item-jeanis" href="#">
+                                    <i class="bi bi-cart2 m-3"></i>
+                                    <span>
+                                        Orders
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item dropdown-item-jeanis" href="#">
+                                    <i class="bi bi-credit-card m-3"></i>
+                                    <span>
+                                        Payments
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item dropdown-item-jeanis" href="#">
+                                    <i class="bi bi-wallet m-3"></i>
+                                    <span>
+                                        Wallet
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item dropdown-item-jeanis" href="#">
+                                    <i class="bi bi-headphones m-3"></i>
+                                    <span>
+                                        GetHelp
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item dropdown-item-jeanis" href="#">
+                                    <i class="bi bi-question-circle m-3"></i>
+                                    <span>
+                                        FAQ
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="bi bi-box-arrow-in-right m-3 icon"></i>
+                                    <span class="logout">
+                                        Log Out
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- Nav bar Three -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar-3">
+
+            <div class="d-flex flex-row">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                All
+                            </a>
+
+                            <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+
+                                <ul class=" d-flex p-0">
+
+                                    <li class="d-flex flex-column  " style="background-color: #e7e7e7">
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Fashion</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Electronics &
+                                            Mobiles</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Beauty &
+                                            Fragrances</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Home &
+                                            Kitchen</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Sports &
+                                            Outdoors</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Toys & Games</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Baby
+                                            Products</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Health &
+                                            Nutrition</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Grocery</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Books</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Automotive</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Tool & Home
+                                            Improvement</a>
+
+                                        <a class="dropdown-item nav-bar-dropdown-section-one " href="#">Pet Supplies</a>
+
+                                    </li>
+
+                                    <li class="d-flex flex-column m-3">
+
+                                        <div>
+                                            <a class="d-flex flex-row dropdown-item nav-bar-dropdown-section-two"
+                                                href="#">Fashion</a>
+                                        </div>
+
+                                        <div class="d-flex">
+
+                                            <div>
+                                                <a class="dropdown-item nav-bar-dropdown-section-three" href="#">Most
+                                                    popular</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Women's
+                                                    Fashion</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Women's
+                                                    Shoes</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Men's
+                                                    Fashion</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Mens
+                                                    Shoe's</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Watches</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Jewellery</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Eye
+                                                    wear</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Women's
+                                                    Handbags</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Girl's
+                                                    Fashion</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Boy's
+                                                    Fashion</a>
+                                            </div>
+
+                                            <div>
+                                                <a class="dropdown-item nav-bar-dropdown-section-four nav-bar-dropdown-section-three"
+                                                    href="#">Top Brands</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Nike</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Adidas</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Reebok</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Puma</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Trendyol</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Skechers</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Shoexpress</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Ray-Ban</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four" href="#">Hayat
+                                                    Abayas</a>
+
+                                                <a class="dropdown-item nav-bar-dropdown-section-four"
+                                                    href="#">Casio</a>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <ul class="navbar-nav">
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub border border-dark" href="#"> MEN </a>
+                </li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> WOMEN ETHNIC </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> WOMEN WESTERN </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> KIDS </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> HOME & KITCHEN </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> BEAUTY & HEALTH </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> JEWELLERY & ACCESSORIES
+                    </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> BAGS & FOOTWEAR </a></li>
+
+                <li class="navbar nav-item p-3 "><a class="nav-link nav-bar-3-sub" href="#"> ELECTRONICS </a></li>
+
+            </ul>
+
+        </nav>
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> -->
+
+    </div>
+
+</body>
+
+</html>
+
+
+<!--
+
+    Clothing > clothing accessories [1v] >> applique patch ; arm warmer ; bandana ; bra charm and brooch ; bra extender ; bra pad & petal ; bra strap ; bra strap converter clip
+             > combo sets [h]
+             > Ethnic wear [h] >> abaya burqa
+             > Fabric [2v] >> fabric
+             > Formal wear [h] >> blazer , dress , shirt , skirts , suits , trousers , waist coats
+             > Inner wear and sleep wear [h] >> baby dolls , bath robes , bloomer & drawers , boxers , bras , briefs , camisole slip , corsets
+             > seasonal wear [3v] >> coat , glove , mufflers , poncho , raincoats , scarfs , shawls , stockings
+             > sports & gym wear [h] >> bras , caps , compression wear , hats , jacket , martial art uniforms , sauna suits , shorts
+             > blazers , waistcoats and suits [h] >> blazer , suits , waistcoats
+             > swim and beach wear [4v] >>
+             > top wear [h] >> blazer , coat , dress , Dungaree & Rompers , Jacket , Jumpsuits , Kaftan , Kids dress
+             > uniform set and accessories [h] >> uniform badge , uniform belt , uniform blazer , uniform cap , uniform dupatta , uniform kurtha , uniform labcoat , uniform pinafore
+             > wedding accessories [5v] >> alta , artificial throw bouquets , groom sehra , kaleera , kamarband , mukut , safa kalangi , wedding veil
+
+    foot wear > sandal
+              > shoe
+              > slipper flipflop
+
+    leather & travel > bags & fashion accessories [1v] >> accessories combo , bag , belts , brooches , carabiners , clutches , contact lens cases , cufflinks and tie pins
+                     > luggage & travel [h] >> backpacks , bottles , briefcases , cigarette pack holders & packsduffel bag , hand fan , luggage combo , rucksacks
+                     > travel accessories [h] >> garment covers , lights , luggage covers , multi utility knives , neck pillow eye shades , perfume bottles , perfume spray nozzle , safety lock straps
+                     > watches clocks & accessories [2v] >> pocket stop watches , pocket watch chains , watches , watch boxes , watch repair kits , watch straps , watch winders , weather station
+
+    jewellery > artificial and silver jewellery [1v] >> anklets , bangles bracelets & armlets , brooches , charms , dog tags , earrings , hair accessories , horse shoe rings
+              > precious jewellery [h] >> coins , gemstone , precious anklet , precious bangle bracelet , precious chains , precious earring , precious jewellery set , precious maang tikka
+
+    home decor > candles & fragrances [1v] >> air fresheners , candles , candle mould , candle tealight holder , incense holder , incense stick
+               > clocks & wall decor [h] >> bell pull end , book ends , general bell , jharokha , key holder , name plate , painting , rack shelves
+               > festival supplies [h] >> cotton wicks , dandia sticks , dhoop cone , envelopes , garlands , havan items ,prayer kit , rakhi set
+               > garden decor [2v] >> artificial flowers , artificial plants , bir baffle , bird feeders , garden gnome , garden stake , grow bag , hammock & swing
+               > home utilities [h] >> bean bag , bird repellent gel , bird shock tracker , bird spike , door hanger , flegs , luggage trolley , magnet
+               > hookah & accessories [h] >> rolling paper
+               > hookhas & accessories [3v] >> beer bong funnels , bang , hookahs , hookah charcoal , hookah flavours , hookah hose , hookah mouth tips
+               > lights & lamps [h] >> bulb , ceiling lamp , disco ball , floor lamps & lights , lamp base , lamp shade , lanterns , outdoor lamp
+               > photo frames & albums [h] >> albums , normal photo frame
+               > spirutual & festive decor [4v] >> altar cloth , chowki , deity dress , deity ornament , diyas , festive gift box , general bell , holi color
+               > table decor & handicrafts [h] >> albums , artificial fruit , ceramic easter egg , decorative bottle , decorative feather , decorative platters , flower basket , gramophone
+
+    sports & fitness > air hockey [1v] >> air hockey puck , air hockey pusher , air hockey table 
+                     > archery [h] >> archery accessories , arrow , arrow pullers , arrow rest , bow , bow rock , bow sling , instrument replacement bow strings
+                     > atheletics [h] >> agility poles , javelins , shot put 
+                     > atheletics [2v] >> baton
+                     > badminton [h] >> covers , grips , kits , nets , racquets , shuttle , sport bags , strings
+                     > baseball [h] >> balls , bat , goggles , sport gloves
+                     > basketball [3v] >> backboard , balls , basketball ring , inflating needle , pumps , sport bags
+                     > boomerangs [h] >> boomerang 
+                     > bowling [h] >> bowling ball , bowling ball polisher , bowling ball sanding disc , bowling target , boxing hand wraps
+                     > boxing [4v] >> focus pads , guards , punching bags , punching bag chains , sport gloves
+                     > camping & hiking [h] >> camming device , camp stove , carabiners , campass , fire starter flint , gaiter , general cooler , hydration packs
+                     > carrom [h] >> boards , carrom cover , carrom replacement mesh , carrom pawn , carrom powder , carrom striker , stands 
+                     > chess [5v] >> boards , chess clocks
+                     > climbing [h] >> belaying device , climbing chalks , climbing holds , climbing quickdraws , horness
+                     > cricket [h] >> balls , bat , bat oil , bowling machine , cone space marker , covers , cricket ball , cricket mats 
+                     > cycling [6v] >> bells , bicycle bottle holder , bicycle brake disks , bicycle carrier , bicycle fork , bicycle handle grips , bicycle locks , bicycle lubricants
+                     > darts [h] >> boards , darts , dart point 
+                     > discuss throw [h] >> discuss throw disc
+                     > diving [7v] >> diving computer , diving gear bag , diving mask , diving regulators , diving tanks , diving tank backpack , diving weight belt , fins
+                     > fishing [h] >> fishing hook , fishing line , fishing line board , fishing lure , fishing reel , fishing rod , fishing sinker weight , fishing swivels
+                     > fitness accessories [h] >> balance step , bars , battle rope , bottles , dumbbells , fitness balance boards , fitness bands , fitness grips
+                     > fitness equipment [8v] >> ab exercisers , cross trainers , ecercise bikes , fitness benches , home gym combo , kits , lat pulldown , mini exerciser cycle 
+                     > foosball [h] >> balls foosball bumper , foosball handle , foosball scoring unit , foosball soccer player , foosball tables , foosball table rod 
+                     > football [h] >> balls , coaching clipboard , cone space marker , football foulcard , guards , inflating needle , kits , nets 
+                     > frisbees [9v] >> frisbee ring
+                     > golf balls [h] >> ball marker , clubs , golf alignement stick , golf brushes , golf club cleaner brush , golf disc , golf divar tool
+                     > hockey [h] >> balls , guards , sport bags , sport gloves 
+                     > horse riding [10v] >> horse hoof care kit , hoof oil , hoof rasps & file , horse hoof stands & jack , horse hoof tester , hoof thrush pad , horse blanket sheet , horse boot
+                     > jumping trainers [h] >> trampolines , trampoline cover , trampoline enclosure , trampoline ladder , trampoline mat , trampoline pole , trampoline spring
+                     > kayaking [h] >> kayak , kayak paddle , kayak racks
+                     > kite flying [11v] >> kite , kite handles , kite tube 
+                     > lacrosse [h] >> lacrosse chest pad , lacrosse head , lackrosse helmet , lacrosse shaft , lacrosse shoulder pad , lacrosse stick
+                     > other sports [h] >> arcade basketball game , arena flower box , arena marker , back spine protecter , bail storage locker , bands , belly stud guard , bite indicator
+                     > paintball [12v] >> 
+
+-->
