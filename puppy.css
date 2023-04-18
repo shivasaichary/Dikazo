@@ -10,6 +10,44 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* SCROLL BAR */
+
+.scrolling {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.nav-bar-dropdown-section-four:hover {
+    color: rgb(12, 10, 10);
+    border-radius: 5px;
+    position: relative;
+    background-color: blueviolet;
+    top: 5px;
+
+}
+
+.nav-bar-dropdown-section-three {
+    color: blueviolet;
+}
+
+.nav-bar-dropdown-section-four {
+    font-size: 15px;
+    color: #aaa;
+}
+
+
+/* MAIN BODY */
+
+* {
+    box-sizing: border-box;
+}
+
+/* POPPINS FONT FOR WHOLE BODY*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* NAV BAR ONE*/
 
 .nav-bar {
@@ -62,7 +100,6 @@ body {
 
 .nav-bar-3 {
     height: 6vh;
-    color: gray;
     font-size: smaller;
     padding-left: 9%;
     padding-right: 9%;
@@ -82,7 +119,7 @@ body {
     color: #aaa;
     /* background-color: #e7e7e7; */
     position: relative;
-    top: 0;
+
     transition: 0.3s;
     font-size: 13px;
 }
@@ -96,84 +133,11 @@ body {
     color: black;
 }
 
-.nav-bar-dropdown-section-four {
-    font-size: 15px;
-    color: #aaa;
-}
 
-.nav-bar-dropdown-section-four:hover {
-    color: white;
-    border-radius: 5px;
-    position: relative;
-    background-color: blueviolet;
-    top: 5px;
-
-}
-
-.nav-bar-dropdown-section-three {
-    color: blueviolet;
-}
-
-/* CIRCLED IMAGES HEADING */
-
-.h5 {
-    text-align: center;
-    font-size: medium;
-}
-
-.container-3boxes {
-    padding-top: 25px;
-}
-
-li {
-    list-style-type: none;
-}
-
-.dropdown:hover>.dropdown-menu {
-    display: block;
-}
-
-.fashion {
-    text-decoration: solid;
-}
-
-.container-circle {
-    text-align: center;
-}
-
-.four-boxes {
-    font-size: small;
-    font-weight: bold;
-}
-
-.container-four-boxes {
-    padding: 25px;
-}
-
-.vertical-heights {
-    font-size: small;
-    font-weight: bold;
-}
-
-.wrapper {
-    display: flex;
-    overflow-x: auto;
-}
-
-.wrapper::-webkit-scrollbar {
-    width: 0;
-}
-
-.carousel .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
 
 .d-flex {
     gap: 10px;
 }
-
 
 
 .dropdown-item-jeanis {
@@ -190,4 +154,18 @@ li {
 
 .demo {
     align-items: center;
+}
+
+.icon {
+    color: red;
+}
+
+.logout {
+    color: black;
+    transition: 0.3s;
+    position: relative;
+}
+
+.logout:hover {
+    top: -3px;
 }
